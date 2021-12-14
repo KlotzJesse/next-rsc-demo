@@ -1,12 +1,9 @@
 import { Suspense } from "react";
-
-// Shared Components
-import Spinner from "../components/spinner";
-
 // Client Components
 import Page from "../components/page.client";
+// Shared Components
+import Spinner from "../components/spinner";
 import Story from "../components/story.client";
-
 // Utils
 import fetchData from "../lib/fetch-data";
 import { transform } from "../lib/get-item";

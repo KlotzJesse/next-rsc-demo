@@ -1,16 +1,16 @@
 import { Suspense } from "react";
-import Footer from "../../components/footer.client";
+import Footer from "../components/footer.client";
 // Client Components
-import Page from "../../components/page.client";
+import Page from "../components/page.client";
 // Server Components
-import SystemInfo from "../../components/server-info.server";
+import SystemInfo from "../components/server-info.server";
 // Shared Components
-import Spinner from "../../components/spinner";
-import Story from "../../components/story.client";
+import Spinner from "../components/spinner";
+import Story from "../components/story.client";
 // Utils
-import fetchData from "../../lib/fetch-data";
-import { transform } from "../../lib/get-item";
-import useData from "../../lib/use-data";
+import fetchData from "../lib/fetch-data";
+import { transform } from "../lib/get-item";
+import useData from "../lib/use-data";
 
 function StoryWithData({ id }) {
   const data = useData(`s-${id}`, () =>
